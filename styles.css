@@ -1,4 +1,4 @@
-/* Base Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -41,14 +41,13 @@ body {
   color: #eaeaff;
 }
 
-/* Section Blocks */
+/* Sections */
 .feature-block {
   background-color: #ffffff;
   margin-bottom: 60px;
   padding: 60px 40px;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-  transition: background 0.3s ease;
 }
 
 .feature-block:nth-child(odd) {
@@ -73,7 +72,7 @@ body {
   padding-left: 20px;
 }
 
-/* Gallery Grid */
+/* Gallery */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -90,37 +89,6 @@ body {
 .thumbnail:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-}
-
-/* Lightbox */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.85);
-  justify-content: center;
-  align-items: center;
-}
-
-.lightbox img {
-  max-width: 90%;
-  max-height: 80vh;
-  border-radius: 14px;
-}
-
-.lightbox:target {
-  display: flex;
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
 }
 
 /* Buttons */
