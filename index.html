@@ -4,53 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ASK SNAPS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Shaik's Lens</h1>
-    <p>Capturing Moments, One Frame at a Time</p>
+  <header class="site-header">
+    <div class="container title-text">
+      <h1>ASK SNAPS</h1>
+      <p class="tagline">Timeless Memories – Beautifully Captured</p>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi, I'm Shaik — a budding photographer with a passion for storytelling through images. Whether it's a quiet sunset or a bustling street, I love capturing the emotion and energy of the moment. My journey began with mobile photography and has grown into a full-fledged creative pursuit. I’m constantly learning, experimenting, and refining my craft.</p>
-  </section>
+  <main class="container">
+    <section id="about" class="feature-block">
+      <h2>About Me</h2>
+      <p>Hello! I’m Ayaaz — a photographer by passion. For me, photography is more than a hobby; it’s a way to tell stories, capture emotions, and preserve fleeting moments...</p>
+    </section>
 
-  <section id="gear">
-    <h2>My Gear</h2>
-    <ul>
-      <li><strong>Camera:</strong> Canon EOS R50</li>
-      <li><strong>Lenses:</strong> RF 50mm f/1.8 STM, RF-S 18-45mm f/4.5-6.3 IS STM</li>
-      <li><strong>Editing Software:</strong> DaVinci Resolve Studio 20</li>
-      <li><strong>Accessories:</strong> Tripod, ND Filters, External Flash</li>
-    </ul>
-  </section>
+    <section id="gear" class="feature-block">
+      <h2>My Gear</h2>
+      <ul>
+        <li><strong>Camera:</strong> Canon EOS R6 Mark II</li>
+        <li><strong>Lenses:</strong> RF 24mm - 105mm F2.8 L IS USM Z</li>
+        <li><strong>Editing Software:</strong> DaVinci Resolve Studio 20, Adobe Premiere Pro 2020, Adobe Lightroom, Adobe After Effects</li>
+        <li><strong>Accessories:</strong> Tripod, External Flash, Gimbal</li>
+      </ul>
+    </section>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="grid">
-      <img src="images/photo1.jpg" alt="Sunset over lake" />
-      <img src="images/photo2.jpg" alt="City lights at night" />
-      <img src="images/photo3.jpg" alt="Portrait in natural light" />
-      <!-- Add more images as needed -->
+    <section id="gallery" class="feature-block">
+      <h2>My Work</h2>
+      <div class="grid">
+ <!-- PORTRAIT Album -->
+        <a href="#album-portrait"><img src="images/Port001.jpg" alt="PORTRAIT" class="thumbnail"></a>
+        <div id="album-portrait" class="lightbox album">
+          <a href="#" class="close">&times;</a>
+          <div class="album-grid">
+            <a href="#portrait-photo1"><img src="images/Port001.jpg" alt="Photo 1"></a>
+            <a href="#portrait-photo2"><img src="images/Port002.jpg" alt="Photo 2"></a>
+            <a href="#portrait-photo3"><img src="images/Port003.jpg" alt="Photo 3"></a>
+            <a href="#portrait-photo4"><img src="images/Port004.jpg" alt="Photo 4"></a>
+          </div>
+        </div>
+        <div id="portrait-photo1" class="lightbox"><a href="#album-portrait" class="close">&times;</a><img src="images/Port001.jpg" alt="Photo 1 Enlarged"></div>
+        <div id="portrait-photo2" class="lightbox"><a href="#album-portrait" class="close">&times;</a><img src="images/Port002.jpg" alt="Photo 2 Enlarged"></div>
+        <div id="portrait-photo3" class="lightbox"><a href="#album-portrait" class="close">&times;</a><img src="images/Port003.jpg" alt="Photo 3 Enlarged"></div>
+        <div id="portrait-photo4" class="lightbox"><a href="#album-portrait" class="close">&times;</a><img src="images/Port004.jpg" alt="Photo 4 Enlarged"></div>
+
+        <!-- NIAGARA Album -->
+        <a href="#album-niagara"><img src="images/Niagara001.jpg" alt="NIAGARA" class="thumbnail"></a>
+        <div id="album-niagara" class="lightbox album">
+          <a href="#" class="close">&times;</a>
+          <div class="album-grid">
+            <a href="#niagara-photo1"><img src="images/Niagara001.jpg" alt="Photo 1"></a>
+            <a href="#niagara-photo2"><img src="images/Niagara002.jpg" alt="Photo 2"></a>
+            <a href="#niagara-photo3"><img src="images/Niagara003.jpg" alt="Photo 3"></a>
+            <a href="#niagara-photo4"><img src="images/Niagara004.jpg" alt="Photo 4"></a>
+          </div>
+        </div>
+        <div id="niagara-photo1" class="lightbox"><a href="#album-niagara" class="close">&times;</a><img src="images/Niagara001.jpg" alt="Photo 1 Enlarged"></div>
+        <div id="niagara-photo2" class="lightbox"><a href="#album-niagara" class="close">&times;</a><img src="images/Niagara002.jpg" alt="Photo 2 Enlarged"></div>
+        <div id="niagara-photo3" class="lightbox"><a href="#album-niagara" class="close">&times;</a><img src="images/Niagara003.jpg" alt="Photo 3 Enlarged"></div>
+        <div id="niagara-photo4" class="lightbox"><a href="#album-niagara" class="close">&times;</a><img src="images/Niagara004.jpg" alt="Photo 4 Enlarged"></div>
+
+        <!-- PARK Album -->
+        <a href="#album-park"><img src="images/Park001.jpg" alt="PARK" class="thumbnail"></a>
+        <div id="album-park" class="lightbox album">
+          <a href="#" class="close">&times;</a>
+          <div class="album-grid">
+            <a href="#park-photo1"><img src="images/Park001.jpg" alt="Photo 1"></a>
+            <a href="#park-photo2"><img src="images/Park002.jpg" alt="Photo 2"></a>
+            <a href="#park-photo3"><img src="images/Park003.jpg" alt="Photo 3"></a>
+            <a href="#park-photo4"><img src="images/Park004.jpg" alt="Photo 4"></a>
+          </div>
+        </div>
+        <div id="park-photo1" class="lightbox"><a href="#album-park" class="close">&times;</a><img src="images/Park001.jpg" alt="Photo 1 Enlarged"></div>
+        <div id="park-photo2" class="lightbox"><a href="#album-park" class="close">&times;</a><img src="images/Park002.jpg" alt="Photo 2 Enlarged"></div>
+        <div id="park-photo3" class="lightbox"><a href="#album-park" class="close">&times;</a><img src="images/Park003.jpg" alt="Photo 3 Enlarged"></div>
+        <div id="park-photo4" class="lightbox"><a href="#album-park" class="close">&times;</a><img src="images/Park004.jpg" alt="Photo 4 Enlarged"></div>
+
+        <!-- COUPLE Album -->
+        <a href="#album-couple"><img src="images/CS001.jpg" alt="COUPLE" class="thumbnail"></a>
+        <div id="album-couple" class="lightbox album">
+          <a href="#" class="close">&times;</a>
+          <div class="album-grid">
+            <a href="#couple-photo1"><img src="images/CS001.jpg" alt="Photo 1"></a>
+            <a href="#couple-photo2"><img src="images/CS002.jpg" alt="Photo 2"></a>
+            <a href="#couple-photo3"><img src="images/CS003.jpg" alt="Photo 3"></a>
+            <a href="#couple-photo4"><img src="images/CS004.jpg" alt="Photo 4"></a>
+          </div>
+        </div>
+        <div id="couple-photo1" class="lightbox"><a href="#album-couple" class="close">&times;</a><img src="images/CS001.jpg" alt="Photo 1 Enlarged"></div>
+        <div id="couple-photo2" class="lightbox"><a href="#album-couple" class="close">&times;</a><img src="images/CS002.jpg" alt="Photo 2 Enlarged"></div>
+        <div id="couple-photo3" class="lightbox"><a href="#album-couple" class="close">&times;</a><img src="images/CS003.jpg" alt="Photo 3 Enlarged"></div>
+        <div id="couple-photo4" class="lightbox"><a href="#album-couple" class="close">&times;</a><img src="images/CS004.jpg" alt="Photo 4 Enlarged"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="feature-block">
+      <h2>Contact</h2>
+      <p>Whether you're planning a portrait session, a special event, or simply want to capture life's candid moments — I’d love to be part of your story...</p>
+      <a href="https://forms.office.com/r/3F7YaG2eMd" target="_blank" class="cta-button">Enquiry Form</a>
+      <a href="https://www.instagram.com/ask.snaps/" target="_blank" class="cta-button">Instagram</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ASK SNAPS</p>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>If you'd like to collaborate or just say hello, feel free to reach out!</p>
-    <p>Email: shaik.photography@example.com</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Shaik's Photography</p>
-    <p>
-      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a> |
-      <a href="https://flickr.com/yourhandle" target="_blank">Flickr</a> |
-      <a href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
-    </p>
   </footer>
 
 </body>
